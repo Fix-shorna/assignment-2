@@ -1,6 +1,9 @@
-nav{
-width: 1600px;
-height: 92px;
+body{
+    font-family: Inter;
+    color: #FFFFFF;
+    background-color: #1A0B2E;
+}
+.nav{
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -8,11 +11,7 @@ padding: 16px 200px ;
 background-color:
 #1A0B2E;
 }
-/* .logo1{
-width: 219px;
-height: 32px;
-border: 1px solid rgba(0, 0, 0, 1);
-} */
+
 .list1{
     display: flex;
 list-style-type: none;
@@ -24,11 +23,13 @@ gap: 32px;
     text-decoration: none;
     font-size: medium;
     color: #FFFFFF;
-    font-size: 14px;
+    font-weight: 500;
     justify-content: center;
    font-size: medium;
 }
-
+.list1 a:hover{
+color:rgb(145, 196, 95);
+}
 .btn-pri-1{
 width: 135px;
 height: 44px;
@@ -36,19 +37,25 @@ justify-content: center;
 align-items: center;
 gap: 4;
 padding: 12px 16px ;
+font-weight: 600;
 border-radius: 100px;
 background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
 }
 .header{
-    width: 550px;
-height: 558px;
-/* display: flex;
-flex-direction: column;
-justify-content: flex-start; */
 align-items: center;
+justify-content: center;
 gap: 40;
-border: 2px solid red;
 padding: 101px 525px;
+border:2px solid #FFFFFF;
+margin:0 auto;
+}
+.header-container{
+background: url(./assets/hero-bg.png);
+background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+/* padding: 70px 120px 134px; */
+padding-right: 100px;
 }
 .img-container{
 position: relative;
@@ -66,15 +73,267 @@ position: relative;
     /* width:289px; */
     transform:translate(-50%,-50%);
 }
+.techwave{
+    color: #FFFFFF;
+    
+}
+#tech{
+    font-style: Extra Bold;
+font-size: 60px;
+font-weight: 800;
+text-align: center;
+justify-content: center;
+}
 .btn-pri-2{
+    width: 201px;
+height: 44px;
+justify-content: center;
+align-items: center;
+gap: 4;
+padding: 12px 16px ;
+font-weight: 600;
+border-radius: 100px;
+background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+color: #FFFFFF;
+}
+
+.btn-pri-3{
 width: 135px;
 height: 44px;
 justify-content: center;
 align-items: center;
 gap: 4;
 padding: 12px 16px ;
+font-weight: 600;
 border-radius: 100px;
 border-color:#00FF88 ;
 color: #00FF88;
 background-color: transparent;
+}
+ #about{
+   margin:50px 200px 120px ;
+ }
+ #about .about-container{
+    width:75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #1A0B2E;
+
+ }
+ #about .about-container h1{
+    font-weight: bold;
+    font-size: 48px;
+ }
+
+#about .about-container .write{
+font-size: 16px;
+font-weight: 400;
+color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+opacity: 0.6;
+}
+#about .about-container .write2
+{font-size: 16px;
+font-weight: 400;
+margin-bottom: 79px;
+color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+opacity: 0.6;
+}
+
+#about .about-container .about-info{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 80px;}
+
+   
+.border{
+    border-style:solid ;
+border-bottom: 0.5px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
+opacity: 0.1;
+}
+.info-card{
+    border: 1px solid #1A0B2E ;
+   width: 240px;
+height: 94px;
+justify-content:space-between;
+}
+.about-info .info-card #rating{
+    font-size: 48px;
+font-weight: 900;
+line-height: 58px;
+color:#00FF88;
+}
+.about-info .info-card p{
+font-size: 16px;
+font-weight: 400;
+}
+.grid{
+align-items: center;
+gap: 40;
+padding: 120px 200px ;
+background-color:rgba(35, 14, 61, 1);
+}
+.choose p{
+    font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+text-align: center;
+gap: 40;
+}
+.grid-container{
+    display: grid;
+  
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+  grid-template-areas:
+  " header nav nav"
+  " header body body"
+  " footerp footerp footerq"
+}
+.grid-1,.grid-2,.grid-3,.grid-footer-1,.grid-footer-2{
+     margin: 30px;
+   padding: 40px;
+   border: 3px solid  rgba(53, 17, 101, 0.4);
+  background: rgba(53, 17, 101, 0.4);
+   border-radius: 40px;
+   justify-content: space-between;
+align-items: center;
+
+}
+.grid-1 p,.grid-2 p,.grid-3 p,.grid-footer-1 p,.grid-footer-2 p{
+    color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+opacity: 0.6;
+font-size: 16px;
+font-weight: 400;
+font-style: Regular;
+
+}
+.grid-1{
+   grid-area: header;
+   align-content: center;
+   justify-content: center;
+}
+.grid-2{
+   grid-area: nav;
+   align-content: center;
+   justify-content: center;
+}
+.grid-3{
+grid-area: body;
+align-content: center;
+   justify-content: center;
+}
+.grid-footer-1{
+  grid-area:footerp ;
+  align-content: center;
+   justify-content: center;
+}
+.grid-footer-2{
+    grid-area: footerq;
+    align-content: center;
+   justify-content: center;
+}
+.feature{
+background-color:#1A0B2E ;
+}
+.episodes{
+border:1px solid #1A0B2E;
+padding: 120px 220px;
+}
+.episodes h1{
+    font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+text-align: center;
+gap:40;
+}
+.episodes .video-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    align-items: center;
+    gap: 20px;
+}
+.video1 iframe{
+    overflow:hidden;
+}
+.video1,.video2,.video3{
+    width:380px;
+    height: 226x;
+    border:1px solid #1A0B2E;
+     justify-content: space-between;
+     background: #250D44;
+     border-radius:41px ;
+}
+.content{
+    gap: 12;
+padding: 24px;
+}
+.content h3{
+    font-style: Bold;
+font-size: 24px;
+font-weight: 700;
+}
+.content p,.person p{
+    color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+opacity: 0.6;
+}
+#time-min{
+    color: #00FF88;
+    font-size: 16px;
+font-weight: 600;
+}
+.host{
+    padding: 0 200px 120px;
+}
+.host h1{
+    font-size: 48px;
+font-weight: 700;
+text-align: center;
+gap: 40;
+}
+.person{
+    width: 700px;
+height: 183px;
+}
+.person h3{
+    font-size: 32px;
+font-weight: 700;
+}
+.alex{
+    border: 1px solid #1A0B2E ;
+    background-color: #250D44;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px;
+    width: 90%;
+}
+#people{
+width: 200px;
+height: 200px;
+}
+.person p{
+font-size: 16px;
+font-weight: 400;
+width: 100%;
+}
+
+
+
+
+
+@media  screen and (max-width:576px) {
+    
+.grid-container{
+    gap: 16;
+padding:5px;
+  grid-template-areas:
+  " header "
+  " nav"
+  " body"
+  " footerp"
+  " footerq"
+}
 }
