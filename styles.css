@@ -290,6 +290,9 @@ gap:40;
      background: #250D44;
      border-radius:20px ;
 }
+.video1:hover,.video2:hover,.video3:hover{
+transform: scale(1.2);
+}
 .content{
     gap: 12;
 padding: 24px;
@@ -315,7 +318,7 @@ font-weight: 600;
     font-size: 3rem;
 font-weight: 700;
 text-align: center;
-gap: 40;
+gap: 40px;
 }
 .person{
     width: 700px;
@@ -333,6 +336,9 @@ font-weight: 700;
     grid-template-columns: repeat(4,1fr);
     padding: 40px;
     width: 90%;
+}
+.alex:hover{
+    transform: scale(1.2);
 }
 #people{
 width: 200px;
@@ -472,10 +478,11 @@ align-items: center;
     width:380px;
     height: 450px;
 }
+.video1:hover,.video2:hover,.video3:hover{
+transform: scale(1);
+}
 .host{
-   
-    
-    padding: 30px 20px ;
+padding: 30px 20px ;
 
 align-items: center;
 text-align: center;
