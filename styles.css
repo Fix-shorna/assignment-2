@@ -54,12 +54,11 @@ width: 550px;
 height: 558px;
 }
 .header-container{
+
 background: url(./assets/hero-bg.png);
 background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-/* padding: 70px 120px 134px; */
-/* padding-right: 100px; */
 }
 .img-container{
 position: relative;
@@ -87,7 +86,7 @@ position: relative;
 }
 #tech{
     font-style: Extra Bold;
-font-size: 60px;
+font-size: 3.75rem;
 font-weight: 800;
 text-align: center;
 justify-content: center;
@@ -127,10 +126,9 @@ right: 664px;
 background-color:#00FF88 ;
 color:#1A0B2E;
 box-shadow:3px 3px 5px  #0c854c ;
-sha
 }
  #about{
-   margin:50px 200px 120px ;
+   padding: 50px 200px 120px ;
  }
  #about .about-container{
     width:75%;
@@ -142,17 +140,17 @@ sha
  }
  #about .about-container h1{
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3rem;
  }
 
 #about .about-container .write{
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 color: var(--#FFFFFF, rgba(255, 255, 255, 1));
 opacity: 0.6;
 }
 #about .about-container .write2
-{font-size: 16px;
+{font-size: 1rem;
 font-weight: 400;
 margin-bottom: 79px;
 color: var(--#FFFFFF, rgba(255, 255, 255, 1));
@@ -178,13 +176,13 @@ height: 94px;
 justify-content:space-between;
 }
 .about-info .info-card #rating{
-    font-size: 48px;
+    font-size: 3rem;
 font-weight: 900;
 line-height: 58px;
 color:#00FF88;
 }
 .about-info .info-card p{
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 }
 .grid{
@@ -195,7 +193,7 @@ background-color:rgba(35, 14, 61, 1);
 }
 .choose p{
     font-style: Bold;
-font-size: 48px;
+font-size: 3rem;
 font-weight: 700;
 text-align: center;
 gap: 40;
@@ -223,9 +221,9 @@ align-items: center;
 .grid-1 p,.grid-2 p,.grid-3 p,.grid-footer-1 p,.grid-footer-2 p{
     color: var(--#FFFFFF, rgba(255, 255, 255, 1));
 opacity: 0.6;
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
-font-style: Regular;
+
 
 }
 .grid-1{
@@ -262,7 +260,7 @@ padding: 120px 220px;
 }
 .episodes h1{
     font-style: Bold;
-font-size: 48px;
+font-size: 3rem;
 font-weight: 700;
 text-align: center;
 gap:40;
@@ -274,16 +272,16 @@ gap:40;
     align-items: center;
     gap: 20px;
 }
-.video1 iframe{
-    overflow:hidden;
+.video1 iframe ,.video2 iframe,.video3 iframe{
+   border-radius:20px ;
 }
 .video1,.video2,.video3{
     width:380px;
-    height: 226x;
+    height: 440px;
     border:1px solid #1A0B2E;
      justify-content: space-between;
      background: #250D44;
-     border-radius:41px ;
+     border-radius:20px ;
 }
 .content{
     gap: 12;
@@ -291,7 +289,7 @@ padding: 24px;
 }
 .content h3{
     font-style: Bold;
-font-size: 24px;
+font-size: 1.5rem;
 font-weight: 700;
 }
 .content p,.person p,.copy,.foot-network .network{
@@ -300,14 +298,14 @@ opacity: 0.6;
 }
 #time-min{
     color: #00FF88;
-    font-size: 16px;
+    font-size: 1rem;
 font-weight: 600;
 }
 .host{
     padding: 0 200px 120px;
 }
 .host h1{
-    font-size: 48px;
+    font-size: 3rem;
 font-weight: 700;
 text-align: center;
 gap: 40;
@@ -317,7 +315,7 @@ gap: 40;
 height: 183px;
 }
 .person h3{
-    font-size: 32px;
+    font-size: 2rem;
 font-weight: 700;
 }
 .alex{
@@ -334,7 +332,7 @@ width: 200px;
 height: 200px;
 }
 .person p{
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 width: 100%;
 }
@@ -382,7 +380,41 @@ height: 200px;
 
 
 @media  screen and (max-width:576px) {
-    
+    .body{
+        align-items: center;
+        justify-content: center;
+    }
+    .header{
+        flex-direction: column;
+        padding: 40px 20px;
+        width: 400px;
+        height: 380px;
+    }
+    #about{
+        padding: 40px 20px;
+    }
+   #about .about-container .about-info{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        padding: 40px 20px;
+    }
+    .info-card{
+        width: 180px;
+        height: 84px;
+        gap:40px;
+    }
+    .grid{
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+    .choose p{
+        flex-direction:column;
+    }
+.grid-1,.grid-2,.grid-3,.grid-footer-1,.grid-footer-2{
+    width:300px;
+   height: 287px;
+   gap: 16;
+}
 .grid-container{
     gap: 16;
 padding:5px;
@@ -392,5 +424,52 @@ padding:5px;
   " body"
   " footerp"
   " footerq"
+}
+.episodes{
+   padding: 40px 20px ;
+
+}
+.episodes h1{
+    flex-direction: column;
+    text-align: center;
+}
+.episodes .video-card{
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.video1,.video2,.video3{
+    width:380px;
+    height: 440px;
+}
+.host{
+    gap: 60;
+    padding: 40px 20px ;
+    width: 400px;
+height: 546px;
+}
+.host h1{
+    text-align: center;
+
+}
+#people{
+width: 150px;
+height: 150px;
+}
+.person{
+    width: 392px;
+    height: 269px;
+}
+.alex{
+    grid-template-rows: repeat(1,1fr);
+
+}
+.social{
+    padding: 40px 20px;
+}
+.footer{
+    width: 300px;
+height:120px ;
+
 }
 }
