@@ -39,7 +39,7 @@ width: 135px;
 height: 44px;
 justify-content: center;
 align-items: center;
-gap: 4;
+gap: 4px;
 padding: 12px 16px ;
 font-weight: 600;
 border-radius: 100px;
@@ -50,7 +50,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 flex-direction: column;
 justify-content:flex-start;
 align-items: center;
-gap: 40;
+gap: 40px;
 padding: 101px 525px;
 position: relative;
 left: 200px;
@@ -120,6 +120,9 @@ border-radius: 100px;
 border-color:#00FF88 ;
 color: #00FF88;
 background-color: transparent;
+}
+.btn-pri-1:hover,.new button:hover,.btn-pri-2:hover,.btn-pri-3:hover{
+    background: rgb(22, 107, 79);
 }
 .new button{
     position: absolute;
@@ -281,7 +284,7 @@ gap:40;
 }
 .video1,.video2,.video3{
     width:380px;
-    height: 440px;
+    height: 450px;
     border:1px solid #1A0B2E;
      justify-content: space-between;
      background: #250D44;
@@ -369,7 +372,7 @@ align-items:center;
     /* border: 1px solid #1A0B2E; */
   /* padding-right: 100px; */
 display: grid;
-flex-direction:column;
+
  text-align: center;
     justify-content: center;
     align-items: center;
@@ -399,10 +402,19 @@ height: 200px;
      padding: 16px 20px;
     }
     .header{
+       
+/* flex-direction: column; */
+justify-content:flex-start;
+align-items: center;
+gap: 40px;
+
+/* position: relative; */
+
+
         flex-direction: column;
-        padding: 40px 20px;
-        width: 400px;
-        height: 380px;
+        /* padding: 40px 20px; */
+        width: 100%;
+        /* height: 380px; */
     }
     #about{
         padding: 40px 20px;
@@ -428,12 +440,13 @@ height: 200px;
         flex-direction:column;
     }
 .grid-1,.grid-2,.grid-3,.grid-footer-1,.grid-footer-2{
-    width:300px;
-   height: 287px;
-   gap: 16;
+    width:250px;
+   height:250px;
+   gap: 5px;
 }
 .grid-container{
-    gap: 16;
+    grid-template-rows: repeat(1,1fr);
+    /* gap: 16px; */
 padding:5px;
   grid-template-areas:
   " header "
@@ -444,7 +457,7 @@ padding:5px;
 }
 .episodes{
    padding: 40px 20px ;
-
+align-items: center;
 }
 .episodes h1{
     flex-direction: column;
@@ -460,10 +473,12 @@ padding:5px;
     height: 450px;
 }
 .host{
-    gap: 60;
-    padding: 40px 20px ;
-    width: 400px;
-height: 546px;
+   
+    
+    padding: 30px 20px ;
+
+align-items: center;
+text-align: center;
 }
 .host h1{
     text-align: center;
@@ -475,18 +490,38 @@ height: 150px;
 }
 .person{
     width: 392px;
-    height: 269px;
+    height:300px;
+    text-align: center;
 }
 .alex{
-    grid-template-rows: repeat(1,1fr);
-
+    display:grid;
+  grid-template-columns: repeat(1,1fr);
+padding: 40px 20px; 
 }
 .social{
-    padding: 40px 20px;
+    padding: 20px 10px;
+    display: flex;
+    text-align: center;
+    width: 100%;
+  
 }
 .footer{
     width: 300px;
-height:120px ;
+    height:120px ;
 
+}
+.foot-logo img{
+    width:219px ;
+    height: 32px;
+}
+.foot-network{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:4px;
+}
+.copy{
+    width: 400px;
+    height: 15px;
+    gap: 8px;
 }
 }
