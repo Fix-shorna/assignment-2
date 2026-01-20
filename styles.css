@@ -118,6 +118,17 @@ border-color:#00FF88 ;
 color: #00FF88;
 background-color: transparent;
 }
+.new button{
+    position: absolute;
+   top: 110px;
+right: 664px;
+    padding: 8px 16px;
+    border-radius: 100px;
+background-color:#00FF88 ;
+color:#1A0B2E;
+box-shadow:3px 3px 5px  #0c854c ;
+sha
+}
  #about{
    margin:50px 200px 120px ;
  }
@@ -353,7 +364,7 @@ align-items:center;
     
 }
 .footer{
-    border: 1px solid white;
+    /* border: 1px solid #1A0B2E; */
   /* padding-right: 100px; */
 display: grid;
 flex-direction:column;
@@ -362,7 +373,9 @@ flex-direction:column;
     align-items: center;
 width: 1360px;
 height: 200px;
-
+ position:relative;
+   
+    left:11%;
 }
 
 
