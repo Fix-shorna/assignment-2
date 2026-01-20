@@ -42,12 +42,16 @@ border-radius: 100px;
 background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
 }
 .header{
+   display: flex;
+flex-direction: column;
+justify-content:flex-start;
 align-items: center;
-justify-content: center;
 gap: 40;
 padding: 101px 525px;
-border:2px solid #FFFFFF;
-margin:0 auto;
+position: relative;
+left: 200px;
+width: 550px;
+height: 558px;
 }
 .header-container{
 background: url(./assets/hero-bg.png);
@@ -55,12 +59,13 @@ background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 /* padding: 70px 120px 134px; */
-padding-right: 100px;
+/* padding-right: 100px; */
 }
 .img-container{
 position: relative;
- width: 350px;
- height:350px;
+ width: 375px;
+ height:375px;
+ padding: 0 120px;
 }
 .bg-micro{
     width: 100%;
@@ -72,10 +77,13 @@ position: relative;
     left:50%;
     /* width:289px; */
     transform:translate(-50%,-50%);
+}.hacks{
+    text-align: center;
+
 }
 .techwave{
     color: #FFFFFF;
-    
+    margin-bottom: 24px;
 }
 #tech{
     font-style: Extra Bold;
@@ -275,7 +283,7 @@ padding: 24px;
 font-size: 24px;
 font-weight: 700;
 }
-.content p,.person p{
+.content p,.person p,.copy,.foot-network .network{
     color: var(--#FFFFFF, rgba(255, 255, 255, 1));
 opacity: 0.6;
 }
@@ -319,7 +327,43 @@ font-size: 16px;
 font-weight: 400;
 width: 100%;
 }
+.foot-logo img{
+   width: 410px;
+   height: 60px;
+   text-align: center;
+   
+}
+.foot-network{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    flex-direction: row;
+    justify-content:center;
+align-items:center;
+    gap: 40px;
+}
+.social{
+ background: url(./assets/footer-bg.png);
+ background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 120px;
+   margin: 0 auto;
+   text-align: center;
+   /* justify-content: center; */
+    
+}
+.footer{
+    border: 1px solid white;
+  /* padding-right: 100px; */
+display: grid;
+flex-direction:column;
+ text-align: center;
+    justify-content: center;
+    align-items: center;
+width: 1360px;
+height: 200px;
 
+}
 
 
 
