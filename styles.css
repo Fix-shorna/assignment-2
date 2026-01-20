@@ -30,6 +30,10 @@ gap: 32px;
 .list1 a:hover{
 color:rgb(145, 196, 95);
 }
+.menu img{
+  display: none;
+  cursor: pointer;
+}
 .btn-pri-1{
 width: 135px;
 height: 44px;
@@ -384,6 +388,16 @@ height: 200px;
         align-items: center;
         justify-content: center;
     }
+    .list1 a,.btn-pri-1{
+        display: none;
+    }
+    .menu img{
+        display: block;
+    }
+    .nav{
+        justify-content: space-between;
+     padding: 16px 20px;
+    }
     .header{
         flex-direction: column;
         padding: 40px 20px;
@@ -397,6 +411,9 @@ height: 200px;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
         padding: 40px 20px;
+    }
+    #about .about-container h1{
+        flex-direction: column;
     }
     .info-card{
         width: 180px;
@@ -440,7 +457,7 @@ padding:5px;
 }
 .video1,.video2,.video3{
     width:380px;
-    height: 440px;
+    height: 450px;
 }
 .host{
     gap: 60;
